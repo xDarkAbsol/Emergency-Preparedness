@@ -17,7 +17,7 @@ model.fit(X_train, y_train)
 print("Accuracy:", accuracy_score(y_test, y_pred))
 print("\nClassification Report:\n", classification_report(y_test, y_pred))
 ```
-
+<img src="images/LogisticMetrics.png"/>
 
 ```
 # Confusion Matrix
