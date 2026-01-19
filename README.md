@@ -48,3 +48,6 @@ print("Accuracy:", accuracy_score(y_test, y_pred_rf))
 print(classification_report(y_test, y_pred_rf))
 ```
 <img src="images/RandomMetrics.png"/>
+
+# EDAs
+<img src="images/RelationMetrics.png"/>
