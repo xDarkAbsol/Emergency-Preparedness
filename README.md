@@ -17,6 +17,7 @@ model.fit(X_train, y_train)
 print("Accuracy:", accuracy_score(y_test, y_pred))
 print("\nClassification Report:\n", classification_report(y_test, y_pred))
 ```
+<img src="images/LogisticMetrics.png"/>
 
 ```
 # Confusion Matrix
@@ -27,6 +28,7 @@ plt.ylabel("Actual")
 plt.title("Confusion Matrix")
 plt.show()
 ```
+<img src="images/Confusion.png"/>
 
 # Metrics of RandomForestClassifier
 ```
@@ -45,3 +47,4 @@ y_pred_rf = rf.predict(X_test)
 print("Accuracy:", accuracy_score(y_test, y_pred_rf))
 print(classification_report(y_test, y_pred_rf))
 ```
+<img src="images/RandomMetrics.png"/>
