@@ -1,4 +1,4 @@
-# Link to the Streamlit applicaiton
+# Link to the Streamlit application
 https://emergency-preparedness.streamlit.app/
 
 # Machine Learning
