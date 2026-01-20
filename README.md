@@ -23,7 +23,7 @@ roc_auc = auc(fpr, tpr)
 
 print("ROC AUC Score:", roc_auc)
 ```
-<img src="images/LogisticMetrics.png"/>
+
 
 ```
 # Confusion Matrix
