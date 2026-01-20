@@ -9,13 +9,19 @@ https://emergency-preparedness.streamlit.app/
 # Metrics of Logistic Regression
 ```
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score,classification_report,confusion_matrix
+from sklearn.metrics import accuracy_score,classification_report,confusion_matrix,roc_curve, auc
 
 model = LogisticRegression()
 model.fit(X_train, y_train)
 
 print("Accuracy:", accuracy_score(y_test, y_pred))
 print("\nClassification Report:\n", classification_report(y_test, y_pred))
+
+y_pred_proba = model.predict_proba(X_test)[:, 1]
+fpr, tpr, thresholds = roc_curve(y_test, y_pred_proba)
+roc_auc = auc(fpr, tpr)
+
+print("ROC AUC Score:", roc_auc)
 ```
 <img src="images/LogisticMetrics.png"/>
 
@@ -46,6 +52,11 @@ y_pred_rf = rf.predict(X_test)
 
 print("Accuracy:", accuracy_score(y_test, y_pred_rf))
 print(classification_report(y_test, y_pred_rf))
+
+y_pred_proba_rf = rf.predict_proba(X_test)[:, 1]
+fpr_rf, tpr_rf, thresholds_rf = roc_curve(y_test, y_pred_proba_rf)
+roc_auc_rf = auc(fpr_rf, tpr_rf)
+print("ROC AUC Score:", roc_auc_rf)
 ```
 <img src="images/RandomMetrics.png"/>
 
