@@ -23,7 +23,7 @@ roc_auc = auc(fpr, tpr)
 
 print("ROC AUC Score:", roc_auc)
 ```
-
+<img src="images/LogisticMetrics.png"/>
 
 ```
 # Confusion Matrix
@@ -58,7 +58,7 @@ fpr_rf, tpr_rf, thresholds_rf = roc_curve(y_test, y_pred_proba_rf)
 roc_auc_rf = auc(fpr_rf, tpr_rf)
 print("ROC AUC Score:", roc_auc_rf)
 ```
-<img src="images/RandomMetrics.png"/>
+
 
 # EDAs
 <img src="images/RelationMetrics.png"/>
