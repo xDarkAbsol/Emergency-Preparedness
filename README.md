@@ -63,4 +63,4 @@ print("ROC AUC Score:", roc_auc_rf)
 ```
 <img src="images/RandomMetrics.png"/>
 
-### This is a college project, please refrain from using this in practice.
+This is a college project, please refrain from using this in practice.
