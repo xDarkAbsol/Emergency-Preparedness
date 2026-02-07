@@ -1,6 +1,9 @@
 # Link to the Streamlit application
 https://emergency-preparedness.streamlit.app/
 
+# EDAs
+<img src="images/RelationMetrics.png"/>
+
 # Machine Learning
   **Models Tested**:
 - Logistic Regression
@@ -59,8 +62,5 @@ roc_auc_rf = auc(fpr_rf, tpr_rf)
 print("ROC AUC Score:", roc_auc_rf)
 ```
 <img src="images/RandomMetrics.png"/>
-
-# EDAs
-<img src="images/RelationMetrics.png"/>
 
 ### This is a college project, please refrain from using this in practice.
