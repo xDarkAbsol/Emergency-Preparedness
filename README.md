@@ -62,3 +62,5 @@ print("ROC AUC Score:", roc_auc_rf)
 
 # EDAs
 <img src="images/RelationMetrics.png"/>
+
+### This is a college project, please refrain from using this in practice.
